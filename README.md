@@ -1,4 +1,2 @@
-symfony-todo
-============
-
-A Symfony project created on February 6, 2017, 9:05 am.
+# symfony-todo
+simple todo list using symfony
