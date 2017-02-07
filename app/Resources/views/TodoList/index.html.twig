@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="row column">
+
+        <h2>Todo Lists</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>TodoList Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for todoList in todoLists %}
+                <tr>
+                    <td>{{ todoList.name }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+
+{% endblock %}

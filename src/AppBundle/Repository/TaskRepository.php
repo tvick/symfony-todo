@@ -12,5 +12,8 @@ use AppBundle\Repository\TaskRepositoryInterface;
  */
 class TaskRepository extends \Doctrine\ORM\EntityRepository
 {
-
+    public function findAll()
+    {
+        
+    }
 }
