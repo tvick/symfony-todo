@@ -11,7 +11,7 @@ use AppBundle\Repository\TodoListRepositoryInterface;
 class TodoListController extends Controller
 {
     /**
-     * @Route("/", name="TodoList.index")
+     * @Route("/", name="todoList.index")
      * @Method("GET")
      */
      public function indexAction()
@@ -22,4 +22,13 @@ class TodoListController extends Controller
 
          return $this->render('TodoList/index.html.twig', ['todoLists' => $todoLists]);
      }
+
+     /**
+      * @Route("/create", name="todoList.create")
+      * @Method({"GET","POST"})
+      */
+      public function createAction(Request $request)
+      {
+          return $this->render('TodoList/create.html.twig');
+      }
 }
